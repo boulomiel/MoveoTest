@@ -41,17 +41,6 @@ extension LocManager : CLLocationManagerDelegate{
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {}
     
-    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        switch manager.authorizationStatus{
-            case  .denied:
-            Router.showError(title: Title.location, messageString: Message.location) {
-                openSettings()
-            }
-            default:
-            print("other status", manager.authorizationStatus)
-        }
-    }
-    
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("didFailWithError", error.localizedDescription)
     }
