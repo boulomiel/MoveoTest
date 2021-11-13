@@ -14,7 +14,6 @@ class NotesTabsViewController : UITabBarController, NotesStoryBoard{
     
     var currentUser : MoveoUser?{
         didSet{
-            self.title = "Hey \(currentUser?.name ?? FallDown.stranger)"
             FirebaseAuthManager.shared.currentUser = currentUser
         }
     }
@@ -31,15 +30,15 @@ class NotesTabsViewController : UITabBarController, NotesStoryBoard{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addNavigationItems()
         view.addSubview(floatingButton)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         floatingButton.frame = floatingPointOrigin
+        addNavigationItems()
     }
-    
+
     private func addNavigationItems(){
         self.tabBar.backgroundColor = .purple.withAlphaComponent(0.5)
         self.navigationItem.setHidesBackButton(true, animated: false )

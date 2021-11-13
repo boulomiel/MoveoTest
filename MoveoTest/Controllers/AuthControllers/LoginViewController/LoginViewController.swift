@@ -27,6 +27,12 @@ class LoginViewController : AuthFieldViewController, AuthPageStoryboard{
               }
         loginHandler.proceedLogin(email: email, password: password)
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        logintextField.text = nil
+        passwordTextField.text = nil
+    }
 }
 
 extension LoginViewController : LoginHandlerDelegate{
