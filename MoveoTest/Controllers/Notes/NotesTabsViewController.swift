@@ -31,12 +31,12 @@ class NotesTabsViewController : UITabBarController, NotesStoryBoard{
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(floatingButton)
+        addNavigationItems()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         floatingButton.frame = floatingPointOrigin
-        addNavigationItems()
     }
 
     private func addNavigationItems(){
