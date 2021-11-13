@@ -30,11 +30,11 @@ class NotesMapViewController : UIViewController, NotesStoryBoard{
     }
     
     private func showNoNoteSaved(){
-        noteView =  NoNoteView(frame: self.view.bounds)
+        noteView =  NoNoteView(frame: CGRect(origin: CGPoint(x: 0, y: 85), size: self.view.frame.size))
         self.view.addSubview(noteView!)
         UIView.animate(withDuration: 2.0, delay: 0, options: [.repeat, .autoreverse], animations: {[weak self] in
             if let noteView = self?.noteView {
-                noteView.frame = CGRect(origin: CGPoint(x: 0, y: 50), size: noteView.frame.size)
+                noteView.frame = CGRect(origin: CGPoint(x: 0, y: 135), size: noteView.frame.size)
             }
         }, completion: nil)
     }

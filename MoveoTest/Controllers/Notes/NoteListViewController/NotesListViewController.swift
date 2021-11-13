@@ -58,7 +58,6 @@ class NotesListViewController : UIViewController, NotesStoryBoard{
         noteTableView.register(NoteCell.self)
     }
     
-    
     private func removeNoNotesAnimation(){
         noteView?.layer.removeAllAnimations()
         noteView?.removeFromSuperview()
