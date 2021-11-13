@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cwB-Qh-LZl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="HvL-KC-8pq">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="oEH-uW-eVT" customClass="SplashViewController" customModule="MoveoTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RjD-VN-2Rj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moveo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NiF-6n-xRE">
+                                <rect key="frame" x="8" y="150" width="398" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="l5O-4z-U2r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="99"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="KnV-6n-zwg">
+                                <rect key="frame" x="167" y="370" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="0XN-eG-3eS"/>
+                                    <constraint firstAttribute="height" constant="80" id="ObU-Ot-RFZ"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8fZ-cH-uGO"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NiF-6n-xRE" firstAttribute="top" secondItem="RjD-VN-2Rj" secondAttribute="top" constant="150" id="3oG-XT-Mwb"/>
+                            <constraint firstItem="KnV-6n-zwg" firstAttribute="top" secondItem="NiF-6n-xRE" secondAttribute="bottom" constant="20" id="KE9-2G-crK"/>
+                            <constraint firstItem="NiF-6n-xRE" firstAttribute="leading" secondItem="8fZ-cH-uGO" secondAttribute="leading" constant="8" id="NpK-Dy-uEp"/>
+                            <constraint firstItem="KnV-6n-zwg" firstAttribute="centerX" secondItem="RjD-VN-2Rj" secondAttribute="centerX" id="Q1y-nD-z1c"/>
+                            <constraint firstItem="8fZ-cH-uGO" firstAttribute="trailing" secondItem="NiF-6n-xRE" secondAttribute="trailing" constant="8" id="krf-B7-R6t"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="z3z-as-x2Z"/>
+                    <connections>
+                        <outlet property="loadeView" destination="KnV-6n-zwg" id="qzh-MD-T6v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ot9-Ln-24u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="392.75362318840581" y="-86.383928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iBb-xi-zFG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cwB-Qh-LZl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Oij-9O-KLe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oEH-uW-eVT" kind="relationship" relationship="rootViewController" id="Jra-e3-5NR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijG-VR-cHw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-517.39130434782612" y="-86.383928571428569"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="IJB-bg-MRU">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="qEy-Ol-YpD" customClass="LoginViewController" customModule="MoveoTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7g4-67-RZP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcB-LF-cpM" customClass="AuthContainerView" customModule="MoveoTest" customModuleProvider="target">
+                                <rect key="frame" x="30" y="228" width="354" height="287.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BFq-kP-3J2">
+                                        <rect key="frame" x="20" y="20" width="314" height="255.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDQ-ZA-Soy">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="SjC-gT-cvx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="syN-VY-JAZ" customClass="AuthTextField" customModule="MoveoTest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="50" width="314" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="bEP-vz-ZO0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="email"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXt-w0-OwU">
+                                                <rect key="frame" x="0.0" y="110" width="314" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="jHJ-yk-b9a"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ac7-Q1-7Am" customClass="AuthTextField" customModule="MoveoTest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="160" width="314" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="IO9-FI-39H"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pT5-dL-8zs" customClass="AuthButton" customModule="MoveoTest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="220" width="314" height="35.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35.5" id="NgC-kA-70Z"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                                <connections>
+                                                    <action selector="loginAction:" destination="qEy-Ol-YpD" eventType="touchUpInside" id="jru-8N-3Sa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="BFq-kP-3J2" firstAttribute="leading" secondItem="fcB-LF-cpM" secondAttribute="leading" constant="20" id="9vg-cG-6xz"/>
+                                    <constraint firstAttribute="bottom" secondItem="BFq-kP-3J2" secondAttribute="bottom" constant="12" id="AIO-0h-j9d"/>
+                                    <constraint firstAttribute="trailing" secondItem="BFq-kP-3J2" secondAttribute="trailing" constant="20" id="Leb-20-vnB"/>
+                                    <constraint firstItem="BFq-kP-3J2" firstAttribute="top" secondItem="fcB-LF-cpM" secondAttribute="top" constant="20" id="b4S-dj-eCQ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="          Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4M3-Si-5d1" customClass="AuthPageLabel" customModule="MoveoTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="195.5" width="85.5" height="20.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dbC-Tf-k57"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dbC-Tf-k57" firstAttribute="trailing" secondItem="fcB-LF-cpM" secondAttribute="trailing" constant="30" id="62H-a3-flg"/>
+                            <constraint firstItem="fcB-LF-cpM" firstAttribute="top" secondItem="4M3-Si-5d1" secondAttribute="bottom" constant="12" id="9Et-SN-vhT"/>
+                            <constraint firstItem="4M3-Si-5d1" firstAttribute="leading" secondItem="dbC-Tf-k57" secondAttribute="leading" id="SQ1-SS-cpq"/>
+                            <constraint firstItem="fcB-LF-cpM" firstAttribute="top" secondItem="dbC-Tf-k57" secondAttribute="top" constant="184" id="taj-Eq-Nfg"/>
+                            <constraint firstItem="fcB-LF-cpM" firstAttribute="leading" secondItem="dbC-Tf-k57" secondAttribute="leading" constant="30" id="wof-fh-Utn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logintextField" destination="syN-VY-JAZ" id="Zad-sk-Juj"/>
+                        <outlet property="passwordTextField" destination="ac7-Q1-7Am" id="GdO-y7-l78"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWV-I5-sC6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1925" y="648"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="SYz-q1-hZT">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" id="hDh-iS-EoE" customClass="RegisterViewController" customModule="MoveoTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VCl-3X-0Lv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="         Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yey-2a-bxK" customClass="AuthPageLabel" customModule="MoveoTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="141.5" width="102" height="20.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4a-6z-iN6" customClass="AuthContainerView" customModule="MoveoTest" customModuleProvider="target">
+                                <rect key="frame" x="12" y="174" width="390" height="472.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="E2O-Zi-L3y">
+                                        <rect key="frame" x="12" y="12" width="366" height="448.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZr-Ja-CZ3">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="36.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eXJ-5K-nTM" customClass="AuthTextField" customModule="MoveoTest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="51.5" width="366" height="36.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="continue"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FamilyName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D90-4G-ueG">
+                                                <rect key="frame" x="0.0" y="103" width="366" height="36.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fAB-Dc-2uN" customClass="AuthTextField" customModule="MoveoTest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="154.5" width="366" height="36.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="continue"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zg7-cv-kAJ">
+                                                <rect key="frame" x="0.0" y="206" width="366" height="36.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8mZ-sq-nb3" customClass="AuthTextField" customModule="MoveoTest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="257.5" width="366" height="36.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="email"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yE4-jz-cUJ">
+                                                <rect key="frame" x="0.0" y="309" width="366" height="36.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PgO-fd-waO" customClass="AuthTextField" customModule="MoveoTest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="360.5" width="366" height="36.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrs-Kk-mG6" customClass="AuthButton" customModule="MoveoTest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="412" width="366" height="36.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36.5" id="Ktt-gv-1bi"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Register"/>
+                                                <connections>
+                                                    <action selector="registerAction:" destination="hDh-iS-EoE" eventType="touchUpInside" id="h6y-cR-VWn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="E2O-Zi-L3y" firstAttribute="leading" secondItem="M4a-6z-iN6" secondAttribute="leading" constant="12" id="0UE-RY-L5a"/>
+                                    <constraint firstItem="E2O-Zi-L3y" firstAttribute="top" secondItem="M4a-6z-iN6" secondAttribute="top" constant="12" id="2St-4e-be5"/>
+                                    <constraint firstAttribute="bottom" secondItem="E2O-Zi-L3y" secondAttribute="bottom" constant="12" id="9AX-dH-8MT"/>
+                                    <constraint firstAttribute="trailing" secondItem="E2O-Zi-L3y" secondAttribute="trailing" constant="12" id="ruO-xm-fS9"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="HGm-iY-3mw">
+                                <rect key="frame" x="197" y="686.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Kvq-MC-YxW"/>
+                                    <constraint firstAttribute="height" constant="20" id="c1d-a2-Bf1"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gSP-JL-8Bh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gSP-JL-8Bh" firstAttribute="trailing" secondItem="M4a-6z-iN6" secondAttribute="trailing" constant="12" id="02A-ZB-bqW"/>
+                            <constraint firstItem="M4a-6z-iN6" firstAttribute="top" secondItem="yey-2a-bxK" secondAttribute="bottom" constant="12" id="1es-O7-wfc"/>
+                            <constraint firstItem="M4a-6z-iN6" firstAttribute="leading" secondItem="gSP-JL-8Bh" secondAttribute="leading" constant="12" id="UPg-H1-WeB"/>
+                            <constraint firstItem="HGm-iY-3mw" firstAttribute="top" secondItem="M4a-6z-iN6" secondAttribute="bottom" constant="40" id="Wuu-Rq-WE3"/>
+                            <constraint firstItem="yey-2a-bxK" firstAttribute="leading" secondItem="gSP-JL-8Bh" secondAttribute="leading" id="Zqx-kn-2Qs"/>
+                            <constraint firstItem="HGm-iY-3mw" firstAttribute="centerX" secondItem="VCl-3X-0Lv" secondAttribute="centerX" id="cTZ-wL-TtN"/>
+                            <constraint firstItem="M4a-6z-iN6" firstAttribute="top" secondItem="gSP-JL-8Bh" secondAttribute="top" constant="130" id="d9s-0E-Nrq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="8mZ-sq-nb3" id="Cj5-qx-ihJ"/>
+                        <outlet property="familyTextField" destination="fAB-Dc-2uN" id="X4z-Fs-aaz"/>
+                        <outlet property="nameTextField" destination="eXJ-5K-nTM" id="fru-1i-CgT"/>
+                        <outlet property="passwordTextField" destination="PgO-fd-waO" id="RUO-Wa-cdY"/>
+                        <outlet property="registerIndicator" destination="HGm-iY-3mw" id="iWP-w9-JBK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XhG-Dy-nqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3040.579710144928" y="647.54464285714278"/>
+        </scene>
+        <!--Auth Pageview Controller-->
+        <scene sceneID="WQl-cp-fnD">
+            <objects>
+                <pageViewController storyboardIdentifier="AuthPageviewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="4za-x9-Knh" customClass="AuthPageviewController" customModule="MoveoTest" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uhc-Qq-Tk1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2520" y="-86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ErrorVC-->
+        <scene sceneID="Yl8-4w-n8N">
+            <objects>
+                <viewController storyboardIdentifier="ErrorVC" id="TPx-mq-9de" customClass="ErrorVC" customModule="MoveoTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lQr-rG-Lko">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRn-Cp-xRl" customClass="AuthContainerView" customModule="MoveoTest" customModuleProvider="target">
+                                <rect key="frame" x="87" y="224" width="240" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yew-tB-ns5">
+                                        <rect key="frame" x="8" y="8" width="41" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something wrong happened" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNv-uP-L2E">
+                                        <rect key="frame" x="8" y="49" width="224" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="02d-ST-R3L"/>
+                                    <constraint firstItem="fNv-uP-L2E" firstAttribute="leading" secondItem="FRn-Cp-xRl" secondAttribute="leading" constant="8" id="J8n-kg-05Z"/>
+                                    <constraint firstItem="Yew-tB-ns5" firstAttribute="leading" secondItem="FRn-Cp-xRl" secondAttribute="leading" constant="8" id="Py4-GO-pIE"/>
+                                    <constraint firstAttribute="trailing" secondItem="fNv-uP-L2E" secondAttribute="trailing" constant="8" id="YvE-69-l5G"/>
+                                    <constraint firstItem="Yew-tB-ns5" firstAttribute="top" secondItem="FRn-Cp-xRl" secondAttribute="top" constant="8" id="sBi-u7-2nW"/>
+                                    <constraint firstItem="fNv-uP-L2E" firstAttribute="top" secondItem="Yew-tB-ns5" secondAttribute="bottom" constant="20" id="zmg-Ka-s9K"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzH-S0-gDX">
+                                <rect key="frame" x="344" y="59" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1Sh-8G-jn1"/>
+                                    <constraint firstAttribute="width" constant="50" id="UEz-xv-Joa"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark.seal.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="closeError:" destination="TPx-mq-9de" eventType="touchUpInside" id="aTF-74-rho"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vwW-mi-QHU"/>
+                        <constraints>
+                            <constraint firstItem="gzH-S0-gDX" firstAttribute="top" secondItem="vwW-mi-QHU" secondAttribute="top" constant="15" id="5Gy-VA-num"/>
+                            <constraint firstItem="vwW-mi-QHU" firstAttribute="trailing" secondItem="gzH-S0-gDX" secondAttribute="trailing" constant="20" id="977-uB-Yhe"/>
+                            <constraint firstItem="vwW-mi-QHU" firstAttribute="trailing" secondItem="FRn-Cp-xRl" secondAttribute="trailing" constant="87" id="DnH-Op-yzn"/>
+                            <constraint firstItem="FRn-Cp-xRl" firstAttribute="top" secondItem="vwW-mi-QHU" secondAttribute="top" constant="180" id="wAx-eJ-O4b"/>
+                            <constraint firstItem="FRn-Cp-xRl" firstAttribute="leading" secondItem="vwW-mi-QHU" secondAttribute="leading" constant="87" id="xpF-wf-W9j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="fNv-uP-L2E" id="Cj7-H2-cCQ"/>
+                        <outlet property="titleLabel" destination="Yew-tB-ns5" id="iyR-0A-lsU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lap-RL-U7h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3652.1739130434785" y="-86.383928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark.seal.fill" catalog="system" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
