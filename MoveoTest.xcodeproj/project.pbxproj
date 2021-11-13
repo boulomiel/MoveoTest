@@ -36,6 +36,8 @@
 		87217243273C26C600E9C064 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87217242273C26C600E9C064 /* AuthError.swift */; };
 		87217245273C274700E9C064 /* FirebaseDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87217244273C274700E9C064 /* FirebaseDataManager.swift */; };
 		87217247273C277700E9C064 /* LocManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87217246273C277700E9C064 /* LocManager.swift */; };
+		87B951D42740150900BE107A /* FloatingButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87B951D32740150900BE107A /* FloatingButton.xib */; };
+		87B951D62740151A00BE107A /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B951D52740151A00BE107A /* FloatingButton.swift */; };
 		87BBFE74273D613C00493EFB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BBFE73273D613C00493EFB /* Router.swift */; };
 		87BBFE7A273D614B00493EFB /* NotesMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BBFE76273D614B00493EFB /* NotesMapViewController.swift */; };
 		87BBFE7B273D614B00493EFB /* NotesTabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BBFE77273D614B00493EFB /* NotesTabsViewController.swift */; };
@@ -91,6 +93,8 @@
 		87217242273C26C600E9C064 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		87217244273C274700E9C064 /* FirebaseDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataManager.swift; sourceTree = "<group>"; };
 		87217246273C277700E9C064 /* LocManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocManager.swift; sourceTree = "<group>"; };
+		87B951D32740150900BE107A /* FloatingButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatingButton.xib; sourceTree = "<group>"; };
+		87B951D52740151A00BE107A /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		87BBFE73273D613C00493EFB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		87BBFE76273D614B00493EFB /* NotesMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesMapViewController.swift; sourceTree = "<group>"; };
 		87BBFE77273D614B00493EFB /* NotesTabsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTabsViewController.swift; sourceTree = "<group>"; };
@@ -272,6 +276,24 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		87B951D1274014EC00BE107A /* LoadingImageView */ = {
+			isa = PBXGroup;
+			children = (
+				8706FD8E273E8A70000449D5 /* LoadingImageView.xib */,
+				8706FD90273E8A8B000449D5 /* LoadingImageView.swift */,
+			);
+			path = LoadingImageView;
+			sourceTree = "<group>";
+		};
+		87B951D2274014F900BE107A /* FloatingButton */ = {
+			isa = PBXGroup;
+			children = (
+				87B951D32740150900BE107A /* FloatingButton.xib */,
+				87B951D52740151A00BE107A /* FloatingButton.swift */,
+			);
+			path = FloatingButton;
+			sourceTree = "<group>";
+		};
 		87BBFE72273D613C00493EFB /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,11 +355,11 @@
 		87BBFE92273D743C00493EFB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				87B951D2274014F900BE107A /* FloatingButton */,
+				87B951D1274014EC00BE107A /* LoadingImageView */,
 				8706FD89273E6519000449D5 /* NoteCell */,
 				8706FD84273E60D1000449D5 /* NoNoteView */,
 				8706FD67273E375F000449D5 /* AuthViews */,
-				8706FD8E273E8A70000449D5 /* LoadingImageView.xib */,
-				8706FD90273E8A8B000449D5 /* LoadingImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -442,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87BBFE88273D619800493EFB /* Auth.storyboard in Resources */,
+				87B951D42740150900BE107A /* FloatingButton.xib in Resources */,
 				8706FD78273E413C000449D5 /* Error.storyboard in Resources */,
 				8706FD8D273E6530000449D5 /* NoteCell.xib in Resources */,
 				8706FD95273E8EF4000449D5 /* NoNoteView.xib in Resources */,
@@ -483,6 +506,7 @@
 				87217240273C24E700E9C064 /* FirebaseAuthManager.swift in Sources */,
 				87E1CE0F273E9175004064D9 /* NoteCellViewModel.swift in Sources */,
 				87BBFE74273D613C00493EFB /* Router.swift in Sources */,
+				87B951D62740151A00BE107A /* FloatingButton.swift in Sources */,
 				87217247273C277700E9C064 /* LocManager.swift in Sources */,
 				87E1CE21273FA0D4004064D9 /* NotesMapAnnotation.swift in Sources */,
 				8721720D273C1B4200E9C064 /* AppDelegate.swift in Sources */,

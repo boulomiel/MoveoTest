@@ -19,22 +19,31 @@ class NotesTabsViewController : UITabBarController, NotesStoryBoard{
         }
     }
     
+    lazy var floatingPointOrigin : CGRect = {
+      return  CGRect(origin: CGPoint(x: self.view.frame.maxX - 83, y: 80), size: CGSize(width: 80, height: 80))
+    }()
+    
+    lazy var floatingButton : FloatingButton = {
+        return FloatingButton(frame: floatingPointOrigin)
+    }()
+    
     var noteListViewModel : NoteListViewModel? =  NoteListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addNavigationItems()
+        view.addSubview(floatingButton)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        floatingButton.frame = floatingPointOrigin
     }
     
     private func addNavigationItems(){
         self.tabBar.backgroundColor = .purple.withAlphaComponent(0.5)
         self.navigationItem.setHidesBackButton(true, animated: false )
         self.navigationItem.leftBarButtonItem =  UIBarButtonItem(image: UIImage(systemName: "person.fill.xmark"), style: .plain, target: self, action: #selector(backToLogin))
-        self.navigationItem.rightBarButtonItem =  UIBarButtonItem(image: UIImage(systemName: "plus.app.fill"),style: .plain, target: self, action: #selector(toAddNewNotes))
     }
         
     @objc func backToLogin(){
