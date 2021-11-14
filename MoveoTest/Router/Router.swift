@@ -60,7 +60,7 @@ class Router {
     
     private static func push<T : UIViewController>(controller : T){
         let controllers = Router.navigationController?.viewControllers ?? []
-        if !controllers.contains(where: {$0 is T}){
+        if !controllers.contains(where: {$0.self is T}){
             Router.navigationController?.pushViewController(controller, animated:  true)
         }else{
             if let index =  controllers.firstIndex(where: {$0 is T}){

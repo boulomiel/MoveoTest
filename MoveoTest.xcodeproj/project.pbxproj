@@ -237,7 +237,6 @@
 				87217256273C2F1600E9C064 /* Storyboards */,
 				87217241273C26B800E9C064 /* Errors */,
 				8721723E273C24CF00E9C064 /* Managers */,
-				87217223273C1B7500E9C064 /* GoogleService-Info.plist */,
 				8721720C273C1B4200E9C064 /* AppDelegate.swift */,
 				8721720E273C1B4200E9C064 /* SceneDelegate.swift */,
 				87217218273C1B4300E9C064 /* Assets.xcassets */,
@@ -253,6 +252,7 @@
 				8721723F273C24E700E9C064 /* FirebaseAuthManager.swift */,
 				87217244273C274700E9C064 /* FirebaseDataManager.swift */,
 				87217246273C277700E9C064 /* LocManager.swift */,
+				87217223273C1B7500E9C064 /* GoogleService-Info.plist */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -744,7 +744,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/boulomiel/FirebaseWrapperSPM.git";
 			requirement = {
-				branch = Update;
+				branch = main;
 				kind = branch;
 			};
 		};
