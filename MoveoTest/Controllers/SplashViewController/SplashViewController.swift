@@ -25,11 +25,6 @@ class SplashViewController : UIViewController{
             self?.splasConnectionHandler.checkIfUserIsConnected()
         }
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        FirebaseAuthManager.shared.removeAuthListener()
-    }
 }
 
 extension SplashViewController : SplashHandlerDelegate{

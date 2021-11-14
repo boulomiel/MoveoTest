@@ -57,11 +57,7 @@ class RegisterViewController : AuthFieldViewController, AuthPageStoryboard{
     }
 }
 
-extension RegisterViewController : RegistrationDelegate{
-    func onRegistrationSuccess(user: MoveoUser?) {
-        Router.showNotesTabs(user: user)
-    }
-    
+extension RegisterViewController : RegistrationDelegate{ 
     func onRegistrationError(error: AuthError) {
         sleepIndicator()
         Router.showError(title: error.title, messageString: error.message){[weak self] in

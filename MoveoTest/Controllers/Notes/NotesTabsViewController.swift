@@ -14,6 +14,7 @@ class NotesTabsViewController : UITabBarController, NotesStoryBoard{
     
     var currentUser : MoveoUser?{
         didSet{
+            navigationItem.title = "Hey \(currentUser?.name ?? FallDown.stranger) !"
             FirebaseAuthManager.shared.currentUser = currentUser
         }
     }
@@ -38,6 +39,10 @@ class NotesTabsViewController : UITabBarController, NotesStoryBoard{
         super.viewWillAppear(animated)
         floatingButton.frame = floatingPointOrigin
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
 
     private func addNavigationItems(){
         self.tabBar.backgroundColor = .purple.withAlphaComponent(0.5)
@@ -46,13 +51,16 @@ class NotesTabsViewController : UITabBarController, NotesStoryBoard{
     }
         
     @objc func backToLogin(){
-        FirebaseAuthManager.shared.logout()
         Router.showError(title: Title.logout, messageString: Message.logout) {
-            Router.showAuthViewController()
+            FirebaseAuthManager.shared.logout()
         }
     }
     
     @objc func toAddNewNotes(){
         Router.showNotesEditViewController()
+    }
+    
+    deinit{
+        self.currentUser = nil
     }
 }

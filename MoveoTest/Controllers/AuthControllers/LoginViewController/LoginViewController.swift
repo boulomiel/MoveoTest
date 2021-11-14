@@ -36,13 +36,6 @@ class LoginViewController : AuthFieldViewController, AuthPageStoryboard{
 }
 
 extension LoginViewController : LoginHandlerDelegate{
-    
-    func onLoginSuccess(user: MoveoUser?) {
-        DispatchQueue.main.async {
-            Router.showNotesTabs(user: user)
-        }
-    }
-    
     func onLoginError(error: AuthError) {
         Router.showError(title: error.title, messageString: error.message){[weak self] in
             self?.cleanField()
