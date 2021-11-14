@@ -13,32 +13,18 @@ class NotesListViewController : UIViewController, NotesStoryBoard{
     @IBOutlet weak var noteTableView : UITableView!
     var noteView : NoNoteView?
     var noteListViewModel : NoteListViewModel? =  NoteListViewModel()
-
+    lazy var notesDataHandler = NotesDataHandler(delegate: self)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         LocManager.shared.start()
         setupTableView()
     }
-    
-    private func getData(){
-        FirebaseDataManager.shared.retrieve(type: Note.self, collectioName: "\(Collections.notes)\(FirebaseAuthManager.shared.currentUser!.email)") {[weak self] notes in
-            guard let notes =  notes, notes.count > 0 else {
-                DispatchQueue.main.async {
-                    self?.showNoNoteSaved()
-                }
-                return
-            }
-            DispatchQueue.main.async {
-                self?.removeNoNotesAnimation()
-                self?.noteListViewModel?.observer.value =  notes
-            }
-        }
-    }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         noteListViewModel = NoteListViewModel()
-        getData()
+        notesDataHandler.fetchData()
         noteListViewModel?.bind(tableView: noteTableView)
     }
     
@@ -64,7 +50,7 @@ class NotesListViewController : UIViewController, NotesStoryBoard{
     }
     
     @IBAction func toEditViewController(_ sender: Any) {
-       Router.showNotesEditViewController()
+        Router.showNotesEditViewController()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -82,7 +68,7 @@ extension NotesListViewController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : NoteCell =  tableView.dequeueCell(indexPath: indexPath)
         cell.viewModel = noteListViewModel!.notesViewModel[indexPath.row]
-        return cell 
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -92,5 +78,17 @@ extension NotesListViewController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewModel  = noteListViewModel!.notesViewModel[indexPath.row]
         Router.showNotesEditViewController(noteVM: viewModel)
+    }
+}
+
+extension NotesListViewController : NotesDataDelegate{
+    
+    func dataFetched(notes: [Note]) {
+        removeNoNotesAnimation()
+        noteListViewModel?.observer.value =  notes
+    }
+    
+    func noDataFetched() {
+        showNoNoteSaved()
     }
 }

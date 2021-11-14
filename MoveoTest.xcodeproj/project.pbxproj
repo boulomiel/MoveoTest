@@ -36,6 +36,7 @@
 		87217243273C26C600E9C064 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87217242273C26C600E9C064 /* AuthError.swift */; };
 		87217245273C274700E9C064 /* FirebaseDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87217244273C274700E9C064 /* FirebaseDataManager.swift */; };
 		87217247273C277700E9C064 /* LocManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87217246273C277700E9C064 /* LocManager.swift */; };
+		8759C3FE27415F4A007FC7BD /* NotesDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759C3FD27415F4A007FC7BD /* NotesDataHandler.swift */; };
 		87B951D42740150900BE107A /* FloatingButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87B951D32740150900BE107A /* FloatingButton.xib */; };
 		87B951D62740151A00BE107A /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B951D52740151A00BE107A /* FloatingButton.swift */; };
 		87BBFE74273D613C00493EFB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BBFE73273D613C00493EFB /* Router.swift */; };
@@ -93,6 +94,7 @@
 		87217242273C26C600E9C064 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		87217244273C274700E9C064 /* FirebaseDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataManager.swift; sourceTree = "<group>"; };
 		87217246273C277700E9C064 /* LocManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocManager.swift; sourceTree = "<group>"; };
+		8759C3FD27415F4A007FC7BD /* NotesDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDataHandler.swift; sourceTree = "<group>"; };
 		87B951D32740150900BE107A /* FloatingButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatingButton.xib; sourceTree = "<group>"; };
 		87B951D52740151A00BE107A /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		87BBFE73273D613C00493EFB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 				87E1CE15273EA349004064D9 /* NotesEditViewController */,
 				87E1CE12273E95BC004064D9 /* NoteListViewController */,
 				87BBFE77273D614B00493EFB /* NotesTabsViewController.swift */,
+				8759C3FD27415F4A007FC7BD /* NotesDataHandler.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				87217217273C1B4200E9C064 /* MoveoTest.xcdatamodeld in Sources */,
 				87BBFE8B273D630800493EFB /* SplashViewController.swift in Sources */,
 				8706FD69273E376E000449D5 /* AuthContainerView.swift in Sources */,
+				8759C3FE27415F4A007FC7BD /* NotesDataHandler.swift in Sources */,
 				8706FD8C273E6530000449D5 /* NoteCell.swift in Sources */,
 				87E1CE1B273F8750004064D9 /* NotesEditHandler.swift in Sources */,
 				8706FD6C273E37B1000449D5 /* AuthTitlePage.swift in Sources */,

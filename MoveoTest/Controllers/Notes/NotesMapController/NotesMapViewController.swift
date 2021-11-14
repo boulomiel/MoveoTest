@@ -16,6 +16,7 @@ class NotesMapViewController : UIViewController, NotesStoryBoard{
     var noteListViewModel : NoteListViewModel?
     var locationManager = CLLocationManager()
     var noteView : NoNoteView?
+    lazy var notesDataHandler = NotesDataHandler(delegate: self)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +26,8 @@ class NotesMapViewController : UIViewController, NotesStoryBoard{
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         showUserLocation()
-        getData()
         setupViewModel()
+        notesDataHandler.fetchData()
     }
     
     private func showNoNoteSaved(){
@@ -59,21 +60,6 @@ class NotesMapViewController : UIViewController, NotesStoryBoard{
         }
     }
     
-    private func getData(){
-        FirebaseDataManager.shared.retrieve(type: Note.self, collectioName: "\(Collections.notes)\(FirebaseAuthManager.shared.currentUser!.email)") {[weak self] notes in
-            guard let notes =  notes, notes.count > 0 else {
-                DispatchQueue.main.async {
-                    self?.showNoNoteSaved()
-                }
-                return
-            }
-            self?.noteListViewModel?.observer.value =  notes
-            DispatchQueue.main.async {
-                self?.removeNoNotesAnimation()
-            }
-        }
-    }
-    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         noteListViewModel?.observer.value = nil
@@ -82,6 +68,18 @@ class NotesMapViewController : UIViewController, NotesStoryBoard{
         mMap?.removeAnnotations(mMap!.annotations)
     }
 
+}
+
+extension NotesMapViewController : NotesDataDelegate{
+    
+    func dataFetched(notes: [Note]) {
+        noteListViewModel?.observer.value =  notes
+        removeNoNotesAnimation()
+    }
+    
+    func noDataFetched() {
+        showNoNoteSaved()
+    }
 }
 
 extension NotesMapViewController : MKMapViewDelegate{
