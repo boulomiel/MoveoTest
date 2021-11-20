@@ -3,8 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,27 +17,23 @@
             <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.artframe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EP7-xi-Hfr">
-                    <rect key="frame" x="0.0" y="1" width="250" height="247.5"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EP7-xi-Hfr">
+                    <rect key="frame" x="0.0" y="0.5" width="250" height="249"/>
                     <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </imageView>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="EP7-xi-Hfr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="72F-qR-GU8"/>
-                <constraint firstItem="EP7-xi-Hfr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WjC-vm-27e"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="EP7-xi-Hfr" secondAttribute="bottom" id="lYY-k1-t6R"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EP7-xi-Hfr" secondAttribute="trailing" id="rSm-ln-cuV"/>
+                <constraint firstItem="EP7-xi-Hfr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WjC-vm-27e"/>
+                <constraint firstAttribute="bottom" secondItem="EP7-xi-Hfr" secondAttribute="bottom" id="lYY-k1-t6R"/>
+                <constraint firstAttribute="trailing" secondItem="EP7-xi-Hfr" secondAttribute="trailing" id="rSm-ln-cuV"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="133" y="58"/>
         </view>
     </objects>
     <resources>
-        <image name="photo.artframe" catalog="system" width="128" height="93"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="questionmark.circle" catalog="system" width="128" height="121"/>
     </resources>
 </document>

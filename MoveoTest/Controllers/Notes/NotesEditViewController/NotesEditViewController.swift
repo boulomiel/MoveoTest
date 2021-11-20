@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import CoreLocation
 
 class NotesEditViewController : UIViewController, NotesStoryBoard{
     
@@ -15,7 +14,7 @@ class NotesEditViewController : UIViewController, NotesStoryBoard{
     @IBOutlet weak var contentField: AuthTextField?
     @IBOutlet weak var removeButtonOutlet: AuthButton?
     @IBOutlet weak var removePicButtont: AuthButton!
-    @IBOutlet weak var addedImageView: UIImageView?
+    @IBOutlet weak var addedImageView: LoadingImageView?
     @IBOutlet weak var notefieldLabel: AuthTextField!
     let indicator : UIProgressView?  = UIProgressView()
     var uploadingLabel : UILabel?  =  UILabel()
@@ -23,9 +22,8 @@ class NotesEditViewController : UIViewController, NotesStoryBoard{
     var viewModel : NoteCellViewModel?
     let collectionName = "\(Collections.notes)\(FirebaseAuthManager.shared.currentUser!.email)"
     lazy var editHandler =  NoteEditHandler(delegate: self)
-    var locationManager = CLLocationManager()
     var location : NoteLocation?{
-        if let location = locationManager.location{
+        if let location = LocManager.shared.getCurrentLocation(){
             return NoteLocation(lat: location.coordinate.latitude, long: location.coordinate.longitude)
         }
         return nil
@@ -64,9 +62,11 @@ class NotesEditViewController : UIViewController, NotesStoryBoard{
             removeButtonOutlet?.backgroundColor = .systemRed
             titleField?.text = vm.observer.value?.title
             contentField?.text = vm.observer.value?.content
-            if let imgURL = vm.observer.value?.imageURL, let url = URL(string: imgURL){
-                addedImageView?.sd_setImage(with: url, completed: nil)
+            if let imgURL = vm.observer.value?.imageURL{
+                addedImageView?.setImage(url: imgURL)
                 removePicButtont.isHidden = false
+            }else{
+                addedImageView?.isHidden = true
             }
         }else{
             removeButtonOutlet?.isHidden = true
@@ -134,7 +134,7 @@ class NotesEditViewController : UIViewController, NotesStoryBoard{
     @objc func saveNote(){
         navigationItem.setHidesBackButton(true, animated: true)
         let timeStamp = Date().timeIntervalSince1970
-        if let image = addedImageView?.image{
+        if let image = addedImageView?.imageHolder.image{
             uploadPictureNavigationButton()
             editHandler.uploadWithImage(image: image)
         }else{
@@ -143,7 +143,8 @@ class NotesEditViewController : UIViewController, NotesStoryBoard{
     }
     
     @IBAction func removePixAction(_ sender: Any) {
-        addedImageView?.image = nil
+        addedImageView?.imageHolder.image = nil
+        addedImageView?.isHidden = true
         removePicButtont.isHidden =  true
     }
     
@@ -158,7 +159,7 @@ class NotesEditViewController : UIViewController, NotesStoryBoard{
 
 extension NotesEditViewController : ImagePickerDelegate{
     func didSelect(image: UIImage?) {
-        addedImageView?.image =  image
+        addedImageView?.imageHolder.image =  image
         removePicButtont.isHidden = false
     }
 }

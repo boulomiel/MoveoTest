@@ -32,6 +32,10 @@ class LocManager : NSObject {
         locationManager?.requestLocation()
     }
     
+    func getCurrentLocation() -> CLLocation?{
+        return locationManager?.location
+    }
+    
     deinit{
         locationManager?.stopUpdatingLocation()
     }

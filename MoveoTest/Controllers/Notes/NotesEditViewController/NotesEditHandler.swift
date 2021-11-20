@@ -29,7 +29,7 @@ class NoteEditHandler {
         guard let data =  image.pngData(),
               let currentUser = FirebaseAuthManager.shared.currentUser else {
                   return
-              }
+        }
         FirebaseDataManager.shared.storeImage(data: data, path: "\(currentUser.email)/\(Int(timeStamp))") {[weak self] url in
             self?.controller?.imageUploaded(timestamp: timeStamp, url: url)
         }

@@ -13,14 +13,15 @@ import MapKit
 class NoteListViewModel {
     
     var observer : Observable<[Note]> = Observable(value: [])
-    var notesViewModel : [NoteCellViewModel] = []
+    var notesViewModel = [NoteCellViewModel]()
     
     func bind(tableView : UITableView){
         observer.bind {[weak self] notes in
-            notes?.forEach{
+            guard var notes = notes else {return}
+            notes.sort(by: {$0.timestamp > $1.timestamp})
+            notes.forEach{
                 self?.notesViewModel.append(NoteCellViewModel(observer: Observable(value: $0)))
             }
-            self?.notesViewModel.sort(by: {$0.observer.value?.timestamp ?? 0 >  $1.observer.value?.timestamp ?? 0})
             DispatchQueue.main.async {
                 tableView.reloadData()
             }

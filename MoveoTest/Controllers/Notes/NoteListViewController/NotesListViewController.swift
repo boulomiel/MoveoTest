@@ -12,7 +12,7 @@ class NotesListViewController : UIViewController, NotesStoryBoard{
     
     @IBOutlet weak var noteTableView : UITableView!
     var noteView : NoNoteView?
-    var noteListViewModel : NoteListViewModel? =  NoteListViewModel()
+    var noteListViewModel : NoteListViewModel?
     lazy var notesDataHandler = NotesDataHandler(delegate: self)
     
     override func viewDidLoad() {
@@ -76,8 +76,8 @@ extension NotesListViewController : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewModel  = noteListViewModel!.notesViewModel[indexPath.row]
-        Router.showNotesEditViewController(noteVM: viewModel)
+        if let viewModel  = noteListViewModel?.notesViewModel[indexPath.row]{        Router.showNotesEditViewController(noteVM: viewModel)
+        }
     }
 }
 

@@ -14,7 +14,6 @@ class NotesMapViewController : UIViewController, NotesStoryBoard{
     
     @IBOutlet weak var mMap : MKMapView?
     var noteListViewModel : NoteListViewModel?
-    var locationManager = CLLocationManager()
     var noteView : NoNoteView?
     lazy var notesDataHandler = NotesDataHandler(delegate: self)
 
@@ -46,7 +45,7 @@ class NotesMapViewController : UIViewController, NotesStoryBoard{
     }
     
     private func showUserLocation(){
-        if let location =  locationManager.location{
+        if let location =  LocManager.shared.getCurrentLocation(){
             let viewRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
             mMap?.setRegion(viewRegion, animated: false)
             mMap?.showsUserLocation = true

@@ -33,6 +33,6 @@ struct Note : FirebaseCodable{
         if let location = location {
             return CLLocationCoordinate2D(latitude: location.lat, longitude: location.long)
         }
-        return CLLocationCoordinate2D()
+        return nil
     }
 }

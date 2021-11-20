@@ -30,6 +30,6 @@ class NoteCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        loadingImageView.imageHolder.image = UIImage(systemName: "photo.artframe")
+        loadingImageView.imageHolder.image = UIImage(systemName: "questionmark.circle")
     }
 }
