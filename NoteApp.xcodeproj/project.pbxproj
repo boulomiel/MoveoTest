@@ -30,13 +30,13 @@
 		87217217273C1B4200E9C064 /* MoveoTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87217215273C1B4200E9C064 /* MoveoTest.xcdatamodeld */; };
 		87217219273C1B4300E9C064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87217218273C1B4300E9C064 /* Assets.xcassets */; };
 		8721721C273C1B4300E9C064 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8721721A273C1B4300E9C064 /* LaunchScreen.storyboard */; };
-		87217224273C1B7500E9C064 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87217223273C1B7500E9C064 /* GoogleService-Info.plist */; };
 		8721723D273C24C100E9C064 /* FirebaseWrapperSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 8721723C273C24C100E9C064 /* FirebaseWrapperSPM */; };
 		87217240273C24E700E9C064 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8721723F273C24E700E9C064 /* FirebaseAuthManager.swift */; };
 		87217243273C26C600E9C064 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87217242273C26C600E9C064 /* AuthError.swift */; };
 		87217245273C274700E9C064 /* FirebaseDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87217244273C274700E9C064 /* FirebaseDataManager.swift */; };
 		87217247273C277700E9C064 /* LocManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87217246273C277700E9C064 /* LocManager.swift */; };
 		8759C3FE27415F4A007FC7BD /* NotesDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759C3FD27415F4A007FC7BD /* NotesDataHandler.swift */; };
+		876125072764DA88003B77A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 876125062764DA88003B77A4 /* GoogleService-Info.plist */; };
 		87B951D42740150900BE107A /* FloatingButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87B951D32740150900BE107A /* FloatingButton.xib */; };
 		87B951D62740151A00BE107A /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B951D52740151A00BE107A /* FloatingButton.swift */; };
 		87BBFE74273D613C00493EFB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BBFE73273D613C00493EFB /* Router.swift */; };
@@ -82,19 +82,19 @@
 		8706FD8E273E8A70000449D5 /* LoadingImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingImageView.xib; sourceTree = "<group>"; };
 		8706FD90273E8A8B000449D5 /* LoadingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingImageView.swift; sourceTree = "<group>"; };
 		8706FD94273E8EF4000449D5 /* NoNoteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoNoteView.xib; sourceTree = "<group>"; };
-		87217209273C1B4200E9C064 /* MoveoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoveoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87217209273C1B4200E9C064 /* NoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8721720C273C1B4200E9C064 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8721720E273C1B4200E9C064 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		87217216273C1B4200E9C064 /* MoveoTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoveoTest.xcdatamodel; sourceTree = "<group>"; };
 		87217218273C1B4300E9C064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8721721B273C1B4300E9C064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8721721D273C1B4300E9C064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87217223273C1B7500E9C064 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8721723F273C24E700E9C064 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		87217242273C26C600E9C064 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		87217244273C274700E9C064 /* FirebaseDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataManager.swift; sourceTree = "<group>"; };
 		87217246273C277700E9C064 /* LocManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocManager.swift; sourceTree = "<group>"; };
 		8759C3FD27415F4A007FC7BD /* NotesDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDataHandler.swift; sourceTree = "<group>"; };
+		876125062764DA88003B77A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		87B951D32740150900BE107A /* FloatingButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatingButton.xib; sourceTree = "<group>"; };
 		87B951D52740151A00BE107A /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		87BBFE73273D613C00493EFB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -220,7 +220,7 @@
 		8721720A273C1B4200E9C064 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				87217209273C1B4200E9C064 /* MoveoTest.app */,
+				87217209273C1B4200E9C064 /* NoteApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -251,10 +251,10 @@
 		8721723E273C24CF00E9C064 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				876125062764DA88003B77A4 /* GoogleService-Info.plist */,
 				8721723F273C24E700E9C064 /* FirebaseAuthManager.swift */,
 				87217244273C274700E9C064 /* FirebaseDataManager.swift */,
 				87217246273C277700E9C064 /* LocManager.swift */,
-				87217223273C1B7500E9C064 /* GoogleService-Info.plist */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -405,9 +405,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		87217208273C1B4200E9C064 /* MoveoTest */ = {
+		87217208273C1B4200E9C064 /* NoteApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87217220273C1B4300E9C064 /* Build configuration list for PBXNativeTarget "MoveoTest" */;
+			buildConfigurationList = 87217220273C1B4300E9C064 /* Build configuration list for PBXNativeTarget "NoteApp" */;
 			buildPhases = (
 				87217205273C1B4200E9C064 /* Sources */,
 				87217206273C1B4200E9C064 /* Frameworks */,
@@ -417,12 +417,12 @@
 			);
 			dependencies = (
 			);
-			name = MoveoTest;
+			name = NoteApp;
 			packageProductDependencies = (
 				8721723C273C24C100E9C064 /* FirebaseWrapperSPM */,
 			);
 			productName = MoveoTest;
-			productReference = 87217209273C1B4200E9C064 /* MoveoTest.app */;
+			productReference = 87217209273C1B4200E9C064 /* NoteApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -440,7 +440,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 87217204273C1B4200E9C064 /* Build configuration list for PBXProject "MoveoTest" */;
+			buildConfigurationList = 87217204273C1B4200E9C064 /* Build configuration list for PBXProject "NoteApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -456,7 +456,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				87217208273C1B4200E9C064 /* MoveoTest */,
+				87217208273C1B4200E9C064 /* NoteApp */,
 			);
 		};
 /* End PBXProject section */
@@ -473,9 +473,9 @@
 				8706FD95273E8EF4000449D5 /* NoNoteView.xib in Resources */,
 				8721721C273C1B4300E9C064 /* LaunchScreen.storyboard in Resources */,
 				87217219273C1B4300E9C064 /* Assets.xcassets in Resources */,
+				876125072764DA88003B77A4 /* GoogleService-Info.plist in Resources */,
 				87BBFE86273D615D00493EFB /* Notes.storyboard in Resources */,
 				8706FD8F273E8A70000449D5 /* LoadingImageView.xib in Resources */,
-				87217224273C1B7500E9C064 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,7 +672,12 @@
 				DEVELOPMENT_TEAM = 9585CACZ8F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MoveoTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Note App";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app wants to take pictures";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "The app requires your permission";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "The app requires your permission";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app wants to use your photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Auth;
@@ -683,8 +688,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.moondev.MoveoTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.moondev.NoteApp;
+				PRODUCT_NAME = NoteApp;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -701,7 +706,12 @@
 				DEVELOPMENT_TEAM = 9585CACZ8F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MoveoTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Note App";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app wants to take pictures";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "The app requires your permission";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "The app requires your permission";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app wants to use your photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Auth;
@@ -712,8 +722,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.moondev.MoveoTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.moondev.NoteApp;
+				PRODUCT_NAME = NoteApp;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -723,7 +733,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		87217204273C1B4200E9C064 /* Build configuration list for PBXProject "MoveoTest" */ = {
+		87217204273C1B4200E9C064 /* Build configuration list for PBXProject "NoteApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8721721E273C1B4300E9C064 /* Debug */,
@@ -732,7 +742,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87217220273C1B4300E9C064 /* Build configuration list for PBXNativeTarget "MoveoTest" */ = {
+		87217220273C1B4300E9C064 /* Build configuration list for PBXNativeTarget "NoteApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87217221273C1B4300E9C064 /* Debug */,

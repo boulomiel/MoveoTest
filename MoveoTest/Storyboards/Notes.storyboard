@@ -11,7 +11,7 @@
         <!--Notes List View Controller-->
         <scene sceneID="byL-AR-zAx">
             <objects>
-                <viewController storyboardIdentifier="NotesListViewController" id="xHi-3N-TXT" customClass="NotesListViewController" customModule="MoveoTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotesListViewController" id="xHi-3N-TXT" customClass="NotesListViewController" customModule="NoteApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7dz-GT-1eI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,7 @@
         <!--Notes Edit View Controller-->
         <scene sceneID="5Lc-hT-ZZh">
             <objects>
-                <viewController storyboardIdentifier="NotesEditViewController" id="0UN-TK-6U5" customClass="NotesEditViewController" customModule="MoveoTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotesEditViewController" id="0UN-TK-6U5" customClass="NotesEditViewController" customModule="NoteApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sQJ-WP-wrk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,7 @@
                             <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wxg-wV-BIo">
                                 <rect key="frame" x="20" y="64" width="374" height="798"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2UZ-hT-q2X" userLabel="scollContainer" customClass="AuthContainerView" customModule="MoveoTest" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2UZ-hT-q2X" userLabel="scollContainer" customClass="AuthContainerView" customModule="NoteApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="800"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Your Thoughts :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZ4-Vy-XLS">
@@ -59,7 +59,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PeX-ve-SHi" customClass="AuthTextField" customModule="MoveoTest" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PeX-ve-SHi" customClass="AuthTextField" customModule="NoteApp" customModuleProvider="target">
                                                 <rect key="frame" x="12" y="138.5" width="350" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="Wcb-SV-rLR"/>
@@ -67,7 +67,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aiy-Vd-Vip" customClass="LoadingImageView" customModule="MoveoTest" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aiy-Vd-Vip" customClass="LoadingImageView" customModule="NoteApp" customModuleProvider="target">
                                                 <rect key="frame" x="87" y="457.5" width="200" height="200"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -86,7 +86,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvd-xL-rwZ" customClass="AuthButton" customModule="MoveoTest" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvd-xL-rwZ" customClass="AuthButton" customModule="NoteApp" customModuleProvider="target">
                                                 <rect key="frame" x="247.5" y="346.5" width="110.5" height="31"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -96,7 +96,7 @@
                                                     <action selector="removeButtonAction:" destination="0UN-TK-6U5" eventType="touchUpInside" id="ZvT-eP-1Fq"/>
                                                 </connections>
                                             </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhQ-lx-xww" customClass="AuthButton" customModule="MoveoTest" customModuleProvider="target">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhQ-lx-xww" customClass="AuthButton" customModule="NoteApp" customModuleProvider="target">
                                                 <rect key="frame" x="138" y="665.5" width="98.5" height="31"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -106,7 +106,7 @@
                                                     <action selector="removePixAction:" destination="0UN-TK-6U5" eventType="touchUpInside" id="Rfl-nd-GvR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axu-wy-8Mb" customClass="AuthButton" customModule="MoveoTest" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axu-wy-8Mb" customClass="AuthButton" customModule="NoteApp" customModuleProvider="target">
                                                 <rect key="frame" x="126" y="418.5" width="122" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Add a Picture ?"/>
@@ -176,7 +176,7 @@
         <!--Notes Map View Controller-->
         <scene sceneID="G5R-0p-zg1">
             <objects>
-                <viewController storyboardIdentifier="NotesMapViewController" id="oU3-gU-HPY" customClass="NotesMapViewController" customModule="MoveoTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotesMapViewController" id="oU3-gU-HPY" customClass="NotesMapViewController" customModule="NoteApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kQW-gX-d3J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,7 +225,7 @@
         <!--Notes Tabs View Controller-->
         <scene sceneID="sLD-bT-sqZ">
             <objects>
-                <tabBarController storyboardIdentifier="NotesTabsViewController" id="Him-86-pf5" customClass="NotesTabsViewController" customModule="MoveoTest" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="NotesTabsViewController" id="Him-86-pf5" customClass="NotesTabsViewController" customModule="NoteApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sUf-3c-EXN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

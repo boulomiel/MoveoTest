@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moveo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKo-rp-aMg">
-                                <rect key="frame" x="12" y="194" width="390" height="200"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKo-rp-aMg">
+                                <rect key="frame" x="12" y="150" width="390" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="SYh-9j-j6y"/>
                                 </constraints>
@@ -29,7 +29,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hKo-rp-aMg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="JPo-3O-ZUg"/>
+                            <constraint firstItem="hKo-rp-aMg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="JPo-3O-ZUg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hKo-rp-aMg" secondAttribute="trailing" constant="12" id="MmD-DO-gX0"/>
                             <constraint firstItem="hKo-rp-aMg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="vAu-ki-vKr"/>
                         </constraints>

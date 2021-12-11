@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>71729632225-abbotblldgp6l0ccgkvvu71bhve4cm5e.apps.googleusercontent.com</string>
+	<string>71729632225-2osjp7lla48ra40nfat5gro9kjj22oh2.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.71729632225-abbotblldgp6l0ccgkvvu71bhve4cm5e</string>
+	<string>com.googleusercontent.apps.71729632225-2osjp7lla48ra40nfat5gro9kjj22oh2</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBrKhgfg8BDkw23CcIWWTc2TNFj7HUOlyI</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.moondev.MoveoTest</string>
+	<string>com.moondev.NoteApp</string>
 	<key>PROJECT_ID</key>
 	<string>moveo-4c855</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:71729632225:ios:5d34edbe132dff8788f8a0</string>
+	<string>1:71729632225:ios:bf5228ca26e6921988f8a0</string>
 </dict>
 </plist>

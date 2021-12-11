@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moveo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NiF-6n-xRE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NiF-6n-xRE">
                                 <rect key="frame" x="8" y="150" width="398" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="l5O-4z-U2r"/>
@@ -286,7 +286,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="kXI-eV-rjh"/>
                             </scrollView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="HGm-iY-3mw">
-                                <rect key="frame" x="197" y="641" width="20" height="20"/>
+                                <rect key="frame" x="197" y="655" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="Kvq-MC-YxW"/>
                                     <constraint firstAttribute="height" constant="20" id="c1d-a2-Bf1"/>
