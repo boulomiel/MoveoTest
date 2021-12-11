@@ -212,7 +212,7 @@
 		87217200273C1B4200E9C064 = {
 			isa = PBXGroup;
 			children = (
-				8721720B273C1B4200E9C064 /* MoveoTest */,
+				8721720B273C1B4200E9C064 /* NoteApp */,
 				8721720A273C1B4200E9C064 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -225,7 +225,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8721720B273C1B4200E9C064 /* MoveoTest */ = {
+		8721720B273C1B4200E9C064 /* NoteApp */ = {
 			isa = PBXGroup;
 			children = (
 				87E1CE1C273F9494004064D9 /* Tools */,
@@ -245,7 +245,7 @@
 				8721721D273C1B4300E9C064 /* Info.plist */,
 				87217215273C1B4200E9C064 /* MoveoTest.xcdatamodeld */,
 			);
-			path = MoveoTest;
+			path = NoteApp;
 			sourceTree = "<group>";
 		};
 		8721723E273C24CF00E9C064 /* Managers */ = {
@@ -671,7 +671,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9585CACZ8F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MoveoTest/Info.plist;
+				INFOPLIST_FILE = NoteApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Note App";
 				INFOPLIST_KEY_NSCameraUsageDescription = "The app wants to take pictures";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "The app requires your permission";
@@ -705,7 +705,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9585CACZ8F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MoveoTest/Info.plist;
+				INFOPLIST_FILE = NoteApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Note App";
 				INFOPLIST_KEY_NSCameraUsageDescription = "The app wants to take pictures";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "The app requires your permission";
