@@ -12,7 +12,7 @@ import FirebaseWrapperSPM
 struct FirebaseDataManager {
 
     static let shared = FirebaseDataManager()
-    private let firebaseFirestoreWrapper = FiretoreWrapper()
+    private let firebaseFirestoreWrapper = FirestoreWrapper()
     let storageWrapper = StorageWrapper()
     static func configure(){
         FirebaseWrapper.configure()
@@ -47,7 +47,7 @@ struct FirebaseDataManager {
     
     func retrieveCurrentUser<T : FirebaseCodable>(type : T.Type, collectionName : String, email : String, completion : @escaping([T?])->Void){
         let query = firebaseFirestoreWrapper.getQueryEqualTo(in: collectionName, for: "email", value: email)
-        firebaseFirestoreWrapper.retrieveMultipleOnce(from: query, decode: T.self) { result in
+        firebaseFirestoreWrapper.retrieveMultipleWithQuery(from: query, decode: T.self) { result in
             switch result{
             case .success(let user):
                 let users =  user.compactMap {$0.self}
